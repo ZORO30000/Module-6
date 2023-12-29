@@ -10,7 +10,7 @@ transaction(recipient: Address) {
                         .borrow<&CryptoPoops.Collection{NonFungibleToken.CollectionPublic}>()
                          ?? panic("This account does not have a Collection")
   
-    publicReference.deposit(token: <- nftMinter.createNFT(name: "Tom Holland", favouriteFOOD: "pizza", luckyNumber: 42))
+    publicReference.deposit(token: <- nftMinter.createNFT(name: "jo", favouriteFood: "burger", luckyNumber: 88))
   }
   execute {
     log("Stored newly minted NFT into Collection")
